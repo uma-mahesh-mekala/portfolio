@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #e1e9e5;
+  font-family: poppins;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+  justify-content: end;
+  align-items: center;
+  margin: 5px;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 15px;
+  margin-right: 5px;
+}
+
+header h2 {
+  margin-right: auto;
+}
+
+.nav-links > a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar > a:hover,
+.nav-bar > a.active {
+  border-bottom: 2px solid black;
+}
+
+#about {
+  display: flex;
+  padding: 10px;
+  margin: 20px auto;
+  justify-content: space-around;
+}
+
+#about > .intro {
+  width: 700px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+#greeting {
+  color: #0083a3;
+}
+
+#profession {
+  color: #00008d;
+}
+.my-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  box-shadow: 2px 2px 2px grey;
+}
+
+#about-me {
+  margin-top: auto;
+  color: #00695c;
+  text-align: justify;
+}
+
+@media (max-width: 400px) {
+  .intro h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  #about {
+    display: flex;
+    padding: 10px;
+    margin: 20px auto;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+  }
+
+  .my-pic {
+    width: 70%;
+    height: 200px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    box-shadow: 2px 2px 2px grey;
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links by default on smaller screens */
+    padding: 0;
+  }
+
+  .nav-links > a {
+    margin: 0;
+  }
+
+  .menu-bar {
+    display: flex; /* Display the hamburger icon */
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  /* Styling for the hamburger icon bars */
+  .menu-bar .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+  }
+
+  /* Styling for the active (open) state of the navigation links */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100px;
+    justify-content: space-around;
+    top: 50px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background-color: white;
+    border: 1px solid gray;
+    z-index: 1000;
+  }
+
+  .nav-links > a {
+    border-bottom: 2px solid black;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  #about {
+    display: flex;
+    padding: 10px;
+    margin: 20px auto;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+  }
+
+  .my-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    box-shadow: 2px 2px 2px grey;
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links by default on smaller screens */
+    padding: 0;
+  }
+
+  .nav-links > a {
+    margin: 0;
+  }
+
+  .menu-bar {
+    display: flex; /* Display the hamburger icon */
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  /* Styling for the hamburger icon bars */
+  .menu-bar .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+  }
+
+  /* Styling for the active (open) state of the navigation links */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100px;
+    justify-content: space-around;
+    top: 50px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background-color: white;
+    border: 1px solid gray;
+    z-index: 1000;
+  }
+
+  .nav-links > a {
+    border-bottom: 2px solid black;
+  }
+}
