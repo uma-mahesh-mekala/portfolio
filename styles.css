@@ -95,7 +95,7 @@ header h2 {
   }
 
   .my-pic {
-    width: 70%;
+    width: 200px;
     height: 200px;
     border-radius: 50%;
     mix-blend-mode: multiply;
@@ -154,8 +154,8 @@ header h2 {
   }
 
   .my-pic {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     mix-blend-mode: multiply;
     box-shadow: 2px 2px 2px grey;
