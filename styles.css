@@ -188,8 +188,12 @@ header h2 {
     box-shadow: 2px 2px 2px grey;
   }
 
+  .education > li:hover {
+    transform: scale(1.05);
+  }
+
   .education li * {
-    font-size: small;
+    font-size: 15px;
   }
 }
 
