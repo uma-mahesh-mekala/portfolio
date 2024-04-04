@@ -178,7 +178,7 @@ header h2 {
     width: 100px;
     justify-content: space-around;
     top: 50px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
+    right: 35px; /* Adjust as needed */
     background-color: white;
     border: 1px solid gray;
     z-index: 1000;
@@ -262,7 +262,7 @@ header h2 {
     width: 100px;
     justify-content: space-around;
     top: 50px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
+    right: 35px; /* Adjust as needed */
     background-color: white;
     border: 1px solid gray;
     z-index: 1000;
