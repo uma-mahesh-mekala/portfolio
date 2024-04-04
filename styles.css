@@ -13,11 +13,16 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   padding: 10px;
   justify-content: end;
   align-items: center;
-  margin: 5px;
+  margin: 10 5px;
+  margin-top: 0px;
 }
 
 .nav-bar {
@@ -39,6 +44,10 @@ header h2 {
 .nav-bar > a:hover,
 .nav-bar > a.active {
   border-bottom: 2px solid black;
+}
+
+.content {
+  padding-top: 50px;
 }
 
 #about {
