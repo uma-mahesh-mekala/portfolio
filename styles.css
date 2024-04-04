@@ -21,14 +21,17 @@ header {
   padding: 10px;
   justify-content: end;
   align-items: center;
-  margin: 10 5px;
+  margin: 10px 10px;
   margin-top: 0px;
 }
 
 .nav-bar {
   display: flex;
-  gap: 15px;
-  margin-right: 5px;
+  gap: 10px;
+  margin-right: 25px;
+  border: 2px solid grey;
+  padding: 3px;
+  border-radius: 4px;
 }
 
 header h2 {
