@@ -113,8 +113,7 @@ header h2 {
   text-align: justify;
 }
 
-.heading-education,
-.heading-skills {
+.heading {
   color: #0083a3;
   padding: 10px;
   width: fit-content;
@@ -189,6 +188,41 @@ header h2 {
   transform: scale(1.05);
 }
 
+.projects {
+  width: 100%;
+}
+
+.projects-container {
+  padding: 20px;
+}
+
+.project {
+  padding: 10px;
+  margin: 15px auto;
+  width: 70%;
+  text-decoration: none;
+  background-color: #f3f4e5;
+  color: black;
+  border-radius: 10px;
+}
+
+.project * {
+  background-color: #f3f4e5;
+  margin: 10px auto;
+}
+
+.project a {
+  text-decoration: underline;
+  color: #00008d;
+}
+
+.note {
+  padding: 10px;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
 @media (max-width: 450px) {
   .intro h1 {
     font-size: x-large;
@@ -268,6 +302,14 @@ header h2 {
   .skill {
     width: 70px;
     height: 100px;
+  }
+
+  .project {
+    width: 90%;
+  }
+
+  .project * {
+    font-size: 15px;
   }
 }
 
