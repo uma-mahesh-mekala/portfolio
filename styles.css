@@ -15,7 +15,6 @@ body {
 header {
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 1000;
   display: flex;
   padding: 10px;
@@ -23,6 +22,7 @@ header {
   align-items: center;
   margin: 10px 10px;
   margin-top: 0px;
+  width: 100%;
 }
 
 .nav-bar {
@@ -72,6 +72,7 @@ header h2 {
 
 .content {
   padding-top: 50px;
+  width: 100%;
 }
 
 #about {
@@ -216,12 +217,47 @@ header h2 {
   color: #00008d;
 }
 
+.project-name {
+  color: darkblue;
+}
+
 .note {
   padding: 10px;
 }
 
 .project:hover {
   transform: scale(1.05);
+}
+
+form {
+  margin: 10px 0;
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 7px;
+  border-radius: 5px;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+button[type="submit"] {
+  width: fit-content;
+  padding: 5px;
+  font-size: medium;
+  border-radius: 5px;
+  background-color: #f3f4e5;
+}
+
+button[type="submit"]:hover {
+  background-color: black;
+  color: white;
 }
 @media (max-width: 450px) {
   .intro h1 {
@@ -310,6 +346,15 @@ header h2 {
 
   .project * {
     font-size: 15px;
+  }
+
+  form {
+    margin: 10px 0;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }
 
