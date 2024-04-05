@@ -32,6 +32,29 @@ header {
   padding: 3px;
 }
 
+.menu-bar {
+  display: none;
+}
+.menu-bar .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  transition: transform 0.3s;
+}
+
+.cross .bar:nth-child(2) {
+  display: none;
+}
+
+.cross .bar:nth-child(1) {
+  transform: rotate(-45deg) translateY(6.5px);
+}
+
+.cross .bar:nth-child(3) {
+  transform: rotate(45deg) translateY(-6.5px);
+}
+
 header h2 {
   margin-right: auto;
 }
@@ -99,7 +122,7 @@ header h2 {
   border-bottom: 2px solid grey;
 }
 
-.education {
+.education-container {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -108,7 +131,7 @@ header h2 {
   margin: 10px auto;
 }
 
-.education > li {
+.education-container > li {
   display: flex;
   padding: 10px;
   width: 300px;
@@ -125,7 +148,11 @@ header h2 {
   background-color: #f3f4e5;
 }
 
-#skills {
+.education-container > li:hover {
+  transform: scale(1.05);
+}
+
+.skills-container {
   list-style: none;
   padding: 10px;
   display: flex;
@@ -144,7 +171,7 @@ header h2 {
   width: 100px;
 }
 
-#skills * {
+.skills-container * {
   background-color: #f3f4e5;
 }
 
@@ -199,14 +226,6 @@ header h2 {
     cursor: pointer;
   }
 
-  /* Styling for the hamburger icon bars */
-  .menu-bar .bar {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 3px 0;
-  }
-
   /* Styling for the active (open) state of the navigation links */
   .nav-links.active {
     display: flex;
@@ -225,7 +244,7 @@ header h2 {
     border-bottom: 2px solid black;
   }
 
-  .education > li {
+  .education-container > li {
     display: flex;
     padding: 10px;
     width: 80%;
@@ -237,21 +256,18 @@ header h2 {
     box-shadow: 2px 2px 2px grey;
   }
 
-  .education > li:hover {
-    transform: scale(1.05);
-  }
-
-  .education li * {
+  .education-container li * {
     font-size: 15px;
   }
 
   .skill-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   .skill {
     width: 70px;
+    height: 100px;
   }
 }
 
