@@ -29,9 +29,7 @@ header {
   display: flex;
   gap: 10px;
   margin-right: 25px;
-  border: 2px solid grey;
   padding: 3px;
-  border-radius: 4px;
 }
 
 header h2 {
@@ -92,11 +90,12 @@ header h2 {
   text-align: justify;
 }
 
-.heading-education {
+.heading-education,
+.heading-skills {
   color: #0083a3;
   padding: 10px;
   width: fit-content;
-  margin: 5px 5px;
+  margin: 5px 10px;
   border-bottom: 2px solid grey;
 }
 
@@ -106,6 +105,7 @@ header h2 {
   padding: 10px;
   justify-content: center;
   min-width: fit-content;
+  margin: 10px auto;
 }
 
 .education > li {
@@ -123,6 +123,43 @@ header h2 {
 .education li * {
   margin: 0px 5px;
   background-color: #f3f4e5;
+}
+
+#skills {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 100px;
+}
+
+#skills * {
+  background-color: #f3f4e5;
+}
+
+.skill-name {
+  margin: 5px auto;
+  font-size: large;
+}
+
+.skill-icon {
+  width: 75px;
+  height: 75px;
+}
+
+.skill:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 450px) {
@@ -207,6 +244,15 @@ header h2 {
   .education li * {
     font-size: 15px;
   }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill {
+    width: 70px;
+  }
 }
 
 @media (min-width: 450px) and (max-width: 700px) {
@@ -270,5 +316,14 @@ header h2 {
 
   .nav-links > a {
     border-bottom: 2px solid black;
+  }
+
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skill {
+    width: 90px;
   }
 }
